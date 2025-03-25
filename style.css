@@ -1,0 +1,187 @@
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(to right, blue, darkorange);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Aligned to the top */
+    min-height: 100vh;
+}
+
+/* Container styling */
+.container {
+    width: 95%; /* Expanded to fill most of the screen width */
+    max-width: 1400px; /* Optional: limit the maximum width */
+    margin: 20px auto; /* Minimal margin */
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #2c3e50; 
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Form styling */
+form {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9; /* Light background for form area */
+}
+
+/* Input, select, and button styling */
+input, select, button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #3498db; /* Blue button for actions */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+input:focus, select:focus, button:focus {
+    outline: none;
+    border-color: #3498db; /* Blue border on focus */
+}
+
+/* Success/Error messages */
+.message {
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #e7f3fe; /* Light blue background */
+    border: 1px solid #b3d7ff;
+    color: #31708f;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05); /* Light shadow */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+/* Action buttons */
+.btn-delete, .btn-edit, .btn-delete-category {
+    padding: 8px 15px;
+    margin-right: 5px;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-delete, .btn-delete-category {
+    background-color: #e74c3c; /* Red for delete */
+}
+
+.btn-delete:hover, .btn-delete-category:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
+
+.btn-edit {
+    background-color: #3498db; /* Blue for edit */
+}
+
+.btn-edit:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+.btn-add-category, .btn-cancel, .btn-create-category {
+    background-color: #2ecc71; /* Green for adding or creating */
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-add-category:hover, .btn-create-category:hover {
+    background-color: #27ae60; /* Darker green on hover */
+}
+
+.btn-cancel {
+    background-color: #95a5a6; /* Gray for cancel */
+}
+
+.btn-cancel:hover {
+    background-color: #7f8c8d; /* Darker gray on hover */
+}
+
+/* Category section */
+.category-actions {
+    margin-bottom: 10px;
+}
+
+.category-links a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+}
+
+.category-links a:hover {
+    color: #2980b9; /* Darker blue on hover */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    input, select, button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+}
